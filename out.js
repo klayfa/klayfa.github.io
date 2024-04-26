@@ -31,6 +31,8 @@ for (let k = 0; k < world.length; k++) {
     })
 }
 
+
+//轮播图函数
 function lunbotu(st, l, n) {
     let i = 1
     let str = `图片/区域/${st}/${l[0]}/`
@@ -39,8 +41,12 @@ function lunbotu(st, l, n) {
     const zuo = document.querySelector(`.contry${n + 1} .zuo`)
     const wor = document.querySelectorAll(`.contry${n + 1} .wor li`)
 
+    //国家区域点击事件
     for (let j = 0; j < wor.length; j++) {
         wor[j].addEventListener('click', function () {
+            //点击的对象变成白色
+            //document.querySelector(`.contry${j + 1} .wor .yanse`).classList.remove('yanse')
+            wor[j].classList.add('yanse')
             if (j === 0) {
                 str = `图片/区域/${st}/${l[0]}/`
                 toggle()

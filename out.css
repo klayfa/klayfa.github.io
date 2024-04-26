@@ -83,3 +83,7 @@ header ul li:hover {
 .active {
     display: block;
 }
+
+.yanse {
+    color: white;
+}

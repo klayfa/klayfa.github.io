@@ -84,7 +84,9 @@
 
 .box1 .contry1 {
     background-image: url("图片/区域/蒙德/蒙德城/no1.png");
-    background-size: auto;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
     display: none;
 }
 
@@ -99,7 +101,7 @@
 .box1 .world .wor li {
     text-align: center;
     line-height: 46px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     font-family: '宋体';
     width: 196px;
@@ -130,7 +132,7 @@
 .box1 .world aside .bot {
     width: 100%;
     height: 40px;
-    background-color: blue;
+    background-color: rgba(255, 255, 255, 0.301);
     position: relative;
 }
 
@@ -182,7 +184,7 @@
     margin-top: -440px;
     margin-left: 860px;
     position: relative;
-    background-color: skyblue;
+    background-color: rgba(135, 207, 235, 0.306);
 }
 
 .box1 .contry2 {
