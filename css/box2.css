@@ -1,0 +1,36 @@
+.box2 {
+    position: relative;
+    background: url('../图片/wallpaper-bg.jpg') no-repeat center center/cover;
+    background-position: center top;
+}
+
+.box2 ul {
+    width: calc(100% - 40px);
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box2 ul li {
+    float: left;
+    margin-left: 65px;
+    margin-top: 40px;
+    width: 320px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.box2 ul li:hover {
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.3);
+}
+
+.box2 ul li img {
+    width: 320px;
+    height: 180px;
+    transition: all 0.5s linear 0s;
+}
+
+.box2 ul li img:hover {
+    transform: scale(1.2);
+}
