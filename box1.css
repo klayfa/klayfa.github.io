@@ -1,7 +1,8 @@
 .box1 {
     position: relative;
-    background-image: url("图片/壁纸/4.jpg");
+    background-image: url("图片/background-index.jpg");
     background-position: center top;
+    background-size: 100% 100%;
 }
 
 .box1 .nav {
@@ -41,14 +42,25 @@
     margin-right: 35px;
     cursor: pointer;
     border-radius: 10px 10px 10px 10px;
+    /* 背景图片 */
     background-size: 100% 100%;
     background-position: center bottom;
     background-repeat: repeat;
-    text-align: center;
-    font-size: 20px;
+    /* 动画 */
+    transition: all 0.5s linear 0s;
+    /* 文字设置 */
+    font-size: 30px;
     font-family: "宋体";
-    font-weight: 700;
-    color: aqua;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.box1 .con li p {
+    position: absolute;
+    top: -40px;
+    left: 79px;
+    transition: all 0.35s linear 0s;
 }
 
 .box1 .con li:nth-child(1) {
@@ -73,6 +85,7 @@
 
 .box1 .con li:hover {
     box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.3);
+    background-size: 110% 110%;
 }
 
 .world {
@@ -101,19 +114,45 @@
 .box1 .world .wor li {
     text-align: center;
     line-height: 46px;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 600;
     font-family: '宋体';
+    color: black;
     width: 196px;
     height: 46px;
     border: 2px solid white;
     cursor: pointer;
 }
 
+.box1 .world .p1 {
+    height: 50px;
+    width: 100%;
+    margin-top: 200px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: 650;
+    color: white;
+    font-family: '宋体';
+}
+
+.box1 .world .p1 img {
+    height: 50%;
+    width: 30%;
+    vertical-align: middle;
+}
+
+.box1 .world .p1 img:nth-child(2) {
+    height: 50%;
+    width: 30%;
+    transform: scaleX(-1);
+    vertical-align: middle;
+}
+
 .box1 .world aside {
     width: 640px;
     height: 440px;
-    margin-top: 250px;
+    margin-top: 50px;
     margin-left: 60px;
     position: relative;
 }
@@ -161,8 +200,8 @@
     height: 24px;
     appearance: none;
     border: none;
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff;
+    background: rgba(255, 255, 255, 0.395);
+    color: #4e4e4e;
     border-radius: 4px;
     cursor: pointer;
     top: 8px;
@@ -175,34 +214,51 @@
 
 .box1 .world aside .bot .you {
     right: 24px;
-
 }
 
 .box1 .world section {
     width: 640px;
     height: 440px;
     margin-top: -440px;
-    margin-left: 860px;
+    margin-left: 950px;
     position: relative;
     background-color: rgba(135, 207, 235, 0.306);
+    /* 字体设置 */
+    font-size: 17px;
+    font-weight: 560;
+    line-height: 25px;
+    letter-spacing: 5px;
+    overflow: auto;
 }
 
 .box1 .contry2 {
-    background-color: rgb(255, 230, 0);
+    background-image: url("图片/区域/璃月/璃月港/no1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
     display: none;
 }
 
 .box1 .contry3 {
-    background-color: rgb(255, 0, 225);
+    background-image: url("图片/区域/稻妻/稻妻城/no3.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
     display: none;
 }
 
 .box1 .contry4 {
-    background-color: rgb(30, 255, 0);
+    background-image: url("图片/区域/须弥/须弥城/no1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
     display: none;
 }
 
 .box1 .contry5 {
-    background-color: rgb(25, 0, 255);
+    background-image: url("图片/区域/枫丹/枫丹廷/no1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
     display: none;
 }

@@ -28,7 +28,7 @@
 .box2 ul li img {
     width: 320px;
     height: 180px;
-    transition: all 1s ease-in 0s;
+    transition: all 0.5s linear 0s;
 }
 
 .box2 ul li img:hover {
