@@ -1,13 +1,12 @@
 .box1 {
-    position: relative;
+    position: absolute;
     background-image: url("../图片/background-index.jpg");
     background-position: center top;
     background-size: 100% 100%;
 }
 
 .box1 .nav {
-    position: absolute;
-    top: 70px;
+    margin-top: 100px;
     width: 100%;
     height: 60px;
     text-align: center;
@@ -30,18 +29,19 @@
 }
 
 .box1 .con {
-    position: absolute;
-    top: 250px;
-    left: 90px;
+    width: 1650px;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .box1 .con li {
+    margin-left: 55px;
+    margin-right: 55px;
     width: 220px;
     height: 400px;
-    margin-left: 35px;
-    margin-right: 35px;
     cursor: pointer;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     /* 背景图片 */
     background-size: 100% 100%;
     background-position: center bottom;
@@ -95,14 +95,6 @@
     height: 855px;
 }
 
-.box1 .contry1 {
-    background-image: url("../图片/区域/蒙德/蒙德城/no1.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center top;
-    display: none;
-}
-
 .box1 .world .wor {
     width: 800px;
     background-color: red;
@@ -153,8 +145,9 @@
     width: 640px;
     height: 440px;
     margin-top: 50px;
-    margin-left: 60px;
+    margin-left: 9%;
     position: relative;
+    float: left;
 }
 
 .box1 .world aside .lbt {
@@ -219,46 +212,35 @@
 .box1 .world section {
     width: 640px;
     height: 440px;
-    margin-top: -440px;
-    margin-left: 950px;
+    float: right;
+    margin-top: 50px;
+    margin-right: 9%;
     position: relative;
-    background-color: rgba(135, 207, 235, 0.306);
     /* 字体设置 */
-    font-size: 17px;
-    font-weight: 560;
+    font-size: 20px;
+    font-weight: 700;
     line-height: 25px;
     letter-spacing: 5px;
     overflow: auto;
+    color: white;
+}
+
+.box1 .contry1 {
+    background-image: url("../图片/国家背景/mengde.jpg");
 }
 
 .box1 .contry2 {
-    background-image: url("../图片/区域/璃月/璃月港/no1.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center top;
-    display: none;
+    background-image: url("../图片/国家背景/liyue.jpg");
 }
 
 .box1 .contry3 {
-    background-image: url("../图片/区域/稻妻/稻妻城/no3.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center top;
-    display: none;
+    background-image: url("../图片/国家背景/daoqi.jpg");
 }
 
 .box1 .contry4 {
-    background-image: url("../图片/区域/须弥/须弥城/no1.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center top;
-    display: none;
+    background-image: url("../图片/国家背景/xumi.jpg");
 }
 
 .box1 .contry5 {
-    background-image: url("../图片/区域/枫丹/枫丹廷/no1.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center top;
-    display: none;
+    background-image: url("../图片/国家背景/fengdan.jpg");
 }

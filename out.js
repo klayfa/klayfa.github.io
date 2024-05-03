@@ -56,6 +56,12 @@ for (let k = 0; k < world.length; k++) {
         } else if (k === 4) {
             lunbotu('枫丹', fengdan, k)
         }
+        for (let o = 1; o <= 4; o++) {
+            const jieshao1 = document.querySelector(`.contry${k + 1} section .sec${o}`)
+            jieshao1.style.display = 'none'
+        }
+        const jieshao = document.querySelector(`.contry${k + 1} section .sec${1}`)
+        jieshao.style.display = 'block'
     })
 }
 
@@ -64,12 +70,18 @@ for (let k = 0; k < world.length; k++) {
 function lunbotu(st, l, n) {
     let i = 1
     let str = `图片/区域/${st}/${l[0]}/`
+    //轮播图中的图片
     const lbt = document.querySelector(`.contry${n + 1} .lbt img`)
+    //左右按钮
     const you = document.querySelector(`.contry${n + 1} .you`)
     const zuo = document.querySelector(`.contry${n + 1} .zuo`)
+    //国家区域
     const wor = document.querySelectorAll(`.contry${n + 1} .wor li`)
+    //国家区域大标签
     const p1 = document.querySelector(`.contry${n + 1} .p1`)
+    //轮播图中的小圆点
     const yuandian = document.querySelectorAll(`.box1 .contry${n + 1} aside .bot .bo li`)
+    //将圆点，标签，区域名字设置为默认
     yuandian[i - 1].style.opacity = '1'
     qy(0)
     wor[i - 1].style.color = 'white'
@@ -94,7 +106,6 @@ function lunbotu(st, l, n) {
             //更换箭头里的区域名
             let a = wor[j].innerHTML
             p1.innerHTML = `<img src="图片/de2.png" alt="">&nbsp;${a}&nbsp;<img src="图片/de2.png" alt="">`
-
             if (j === 0) {
                 str = `图片/区域/${st}/${l[0]}/`
                 toggle()
@@ -111,6 +122,13 @@ function lunbotu(st, l, n) {
                 str = `图片/区域/${st}/${l[3]}/`
                 toggle()
             }
+
+            for (let o = 1; o <= 4; o++) {
+                const jieshao1 = document.querySelector(`.contry${n + 1} section .sec${o}`)
+                jieshao1.style.display = 'none'
+            }
+            const jieshao = document.querySelector(`.contry${n + 1} section .sec${j + 1}`)
+            jieshao.style.display = 'block'
         })
     }
     //更换圆点
