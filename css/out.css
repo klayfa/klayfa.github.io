@@ -64,7 +64,7 @@ nav .sp {
     height: 90px;
     position: absolute;
     z-index: 1;
-    right: 20px;
+    right: 50px;
     position: fixed;
     text-align: center;
     line-height: 90px;
@@ -95,6 +95,7 @@ header ul li:hover {
 
 .yanse {
     color: white;
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
 }
 
 .beijing {

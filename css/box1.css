@@ -63,6 +63,15 @@
     transition: all 0.35s linear 0s;
 }
 
+.box1 .con li img {
+    display: inline-block;
+    width: 50%;
+    left: 56px;
+    position: absolute;
+    top: 20px;
+    transition: all 0.35s linear 0s;
+}
+
 .box1 .con li:nth-child(1) {
     background-image: url("../图片/mengde.jpg");
 }
