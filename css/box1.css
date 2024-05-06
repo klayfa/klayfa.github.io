@@ -54,6 +54,7 @@
     font-weight: 800;
     color: rgb(255, 255, 255);
     position: relative;
+    overflow: hidden;
 }
 
 .box1 .con li p {
@@ -65,8 +66,8 @@
 
 .box1 .con li img {
     display: inline-block;
-    width: 50%;
-    left: 56px;
+    width: 40%;
+    left: 68px;
     position: absolute;
     top: 20px;
     transition: all 0.35s linear 0s;
