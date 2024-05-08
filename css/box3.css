@@ -48,6 +48,7 @@
     right: 0%;
     width: 1394px;
     height: 100%;
+    overflow: hidden;
 }
 
 .div2 .no0 {
@@ -60,7 +61,7 @@
 
 .div2 .no1 {
     position: absolute;
-    right: 0;
+    right: 0%;
     width: 100%;
 }
 
@@ -73,7 +74,7 @@
 .div2 .no3 {
     position: absolute;
     bottom: 20%;
-    left: 15%;
+    left: 20%;
 }
 
 .div2 .jieshao {

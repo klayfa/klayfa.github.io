@@ -1,3 +1,5 @@
 .box4 {
-    background-color: rgb(13, 0, 255);
+    background-image: url("../图片/box4/bgi.png");
+    background-position: center top;
+    background-size: 100% 100%;
 }

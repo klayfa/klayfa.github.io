@@ -254,3 +254,50 @@
 .box1 .contry5 {
     background-image: url("../图片/国家背景/fengdan.jpg");
 }
+
+audio {
+    display: none;
+}
+
+.music {
+    position: absolute;
+    left: 20%;
+    top: 105px;
+}
+
+.music img {
+    transform-origin: center center;
+    animation: none;
+}
+
+@keyframes donghua {
+    0% {
+        transform: scale(1);
+        /* 缩回到原始大小 */
+        opacity: 1;
+    }
+
+    25% {
+        transform: scale(1.2);
+        /* 缩回到原始大小 */
+        opacity: 0.75;
+    }
+
+    50% {
+        transform: scale(1.4);
+        /* 缩回到原始大小 */
+        opacity: 0.5;
+    }
+
+    75% {
+        transform: scale(1.6);
+        /* 缩回到原始大小 */
+        opacity: 0.25;
+    }
+
+    100% {
+        transform: scale(1.7);
+        /* 缩回到原始大小 */
+        opacity: 0;
+    }
+}

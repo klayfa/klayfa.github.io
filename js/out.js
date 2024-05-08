@@ -39,6 +39,25 @@ for (let p = 0; p < gj.length; p++) {
     })
 }
 
+//点击音乐
+const audio = document.querySelectorAll('audio')
+const music = document.querySelectorAll('.music')
+let musicimg
+for (let l = 0; l < audio.length; l++) {
+    music[l].addEventListener('click', function () {
+        if (audio[l].paused) {
+            audio[l].play();
+            music[l].innerHTML = '<img src="图片/音乐/音乐.png" alt="">'
+            musicimg = document.querySelectorAll('.music img')
+            musicimg[l].style.animation = 'donghua 2s linear infinite'
+        } else {
+            audio[l].pause();
+            music[l].innerHTML = '<img src="图片/音乐/音乐1.png" alt="">'
+            musicimg = document.querySelectorAll('.music img')
+            musicimg[l].style.animation = 'none'
+        }
+    })
+}
 
 let mengde = ['蒙德城', '酒庄', '废墟', '雪山']
 let liyue = ['璃月港', '庆云顶', '沉玉谷', '层岩巨渊']
@@ -50,6 +69,13 @@ const world = document.querySelectorAll('.box1 .con li')
 const con = document.querySelectorAll('.box1 .contry .world')
 for (let k = 0; k < world.length; k++) {
     world[k].addEventListener('click', function () {
+        //重置音乐按钮
+        for (let l = 0; l < audio.length; l++) {
+            audio[l].pause();
+            music[l].innerHTML = '<img src="图片/音乐/音乐1.png" alt="">'
+            musicimg = document.querySelectorAll('.music img')
+            musicimg[l].style.animation = 'none'
+        }
         for (let j = 0; j < con.length; j++) {
             con[j].style.display = 'none'
         }
@@ -74,7 +100,6 @@ for (let k = 0; k < world.length; k++) {
         jieshao.style.display = 'block'
     })
 }
-
 
 //轮播图函数
 function lunbotu(st, l, n) {
