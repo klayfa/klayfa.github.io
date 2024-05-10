@@ -263,6 +263,7 @@ audio {
     position: absolute;
     left: 20%;
     top: 105px;
+    cursor: pointer;
 }
 
 .music img {
@@ -296,7 +297,7 @@ audio {
     }
 
     100% {
-        transform: scale(1.7);
+        transform: scale(1.8);
         /* 缩回到原始大小 */
         opacity: 0;
     }

@@ -1,4 +1,6 @@
-
+const audio = document.querySelectorAll('audio')
+const music = document.querySelectorAll('.music')
+let musicimg
 //头部点击
 const hli = document.querySelectorAll('header ul li')
 for (let i = 0; i < hli.length; i++) {
@@ -11,6 +13,14 @@ for (let i = 0; i < hli.length; i++) {
         hli[i].style.textShadow = '0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff'
         document.querySelector('article .active').classList.remove('active')
         document.querySelector(`article .box:nth-child(${i + 1})`).classList.add('active')
+
+        //切换模块之后关闭音乐
+        for (let l = 0; l < audio.length; l++) {
+            audio[l].pause();
+            music[l].innerHTML = '<img src="图片/音乐/音乐1.png" alt="">'
+            musicimg = document.querySelectorAll('.music img')
+            musicimg[l].style.animation = 'none'
+        }
     })
 }
 
@@ -40,9 +50,6 @@ for (let p = 0; p < gj.length; p++) {
 }
 
 //点击音乐
-const audio = document.querySelectorAll('audio')
-const music = document.querySelectorAll('.music')
-let musicimg
 for (let l = 0; l < audio.length; l++) {
     music[l].addEventListener('click', function () {
         if (audio[l].paused) {
@@ -69,16 +76,18 @@ const world = document.querySelectorAll('.box1 .con li')
 const con = document.querySelectorAll('.box1 .contry .world')
 for (let k = 0; k < world.length; k++) {
     world[k].addEventListener('click', function () {
-        //重置音乐按钮
+        //切换模块之后关闭音乐
         for (let l = 0; l < audio.length; l++) {
             audio[l].pause();
             music[l].innerHTML = '<img src="图片/音乐/音乐1.png" alt="">'
             musicimg = document.querySelectorAll('.music img')
             musicimg[l].style.animation = 'none'
         }
+        //隐藏全部盒子
         for (let j = 0; j < con.length; j++) {
             con[j].style.display = 'none'
         }
+        //显示点击的盒子
         con[k].style.display = 'block'
         document.documentElement.scrollTop = con[k].offsetTop
         if (k === 0) {
