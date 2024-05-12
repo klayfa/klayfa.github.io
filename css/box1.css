@@ -302,3 +302,15 @@ audio {
         opacity: 0;
     }
 }
+
+.age {
+    position: absolute;
+    width: 90px;
+    bottom: 0;
+    right: 0;
+}
+
+.age img {
+    width: 100%;
+    height: 100%;
+}

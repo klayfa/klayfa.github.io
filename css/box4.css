@@ -1,5 +1,275 @@
 .box4 {
-    background-image: url("../图片/box4/bgi.png");
+    position: absolute;
+    background-image: url("../图片/box4/背景.jpg");
     background-position: center top;
     background-size: 100% 100%;
+}
+
+.box4 .ul3 {
+    width: 746px;
+    height: 65px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgb(246, 240, 228);
+}
+
+.box4 .ul3 li {
+    height: 45px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    float: left;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 1px 3px #BFBFBF;
+    color: #9499A4;
+    background: #FCFBF7;
+}
+
+.box4 .ul3 li:nth-child(1) {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset;
+    color: #37475E;
+    background: #FFF;
+}
+
+.box4 .ul3 li:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset;
+    color: #37475E;
+    background: #FFF;
+}
+
+.box4 .ul3 li img {
+    width: 9px;
+    height: 11px;
+}
+
+.box4 .wuqi {
+    width: 100%;
+    height: 650px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: .8s;
+}
+
+.x img {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card {
+    position: absolute;
+    width: 240px;
+    height: 360px;
+    border-radius: 8px;
+    background-color: rgb(31, 151, 135);
+    text-align: center;
+    border: 10px solid rgba(255, 0, 0, 0.15);
+    transition: .5s;
+    transform-origin: 50% 100%;
+    color: rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+}
+
+.container .card img {
+    margin-top: 25px;
+    width: 160px;
+    height: 160px;
+}
+
+.container .card span {
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 10px;
+    display: inline-block;
+    font-family: '微软雅黑';
+}
+
+.container .card p {
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 30px;
+    font-family: '微软雅黑';
+}
+
+.container:hover .card {
+    translate: calc(var(--i)*130px) 0px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .25);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.container .card:active {
+    translate: calc(var(--i)*120px) -100px;
+    z-index: 1;
+}
+
+.container:active .card:not(:active) {
+    background-color: #333;
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.box4 .wuqi1 {
+    width: 1000px;
+    height: 600px;
+    background-color: #f6f0e5;
+    margin-top: -600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.box4 .wuqi1 .x {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    transition: .95s;
+}
+
+.box4 .wuqi1 .x:hover {
+    transform: rotate(180deg);
+}
+
+.wuqi1 .zuo1 .tupian {
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 200px;
+    top: 4%;
+    left: 4%;
+}
+
+.wuqi1 .zuo1 .tupian img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.zuo1 {
+    width: 445px;
+    height: 550px;
+    position: absolute;
+    top: 4%;
+    left: 3%;
+    border: 2px solid #ffaf52;
+    border-radius: 10px;
+}
+
+.you2 {
+    width: 445px;
+    height: 550px;
+    position: absolute;
+    top: 4%;
+    right: 3%;
+    border: 2px solid #ffaf52;
+    border-radius: 10px;
+    overflow: auto;
+    font-size: 17px;
+    line-height: 20px;
+    font-family: '宋体';
+    font-weight: 560;
+
+}
+
+.wuqi1 .zuo1 .name {
+    width: 230px;
+    height: 28px;
+    position: absolute;
+    top: 7%;
+    right: 6%;
+    text-align: center;
+    line-height: 28px;
+}
+
+.wuqi1 .zuo1 .name p:nth-child(1) {
+    color: #3e4556;
+    display: inline-block;
+    position: absolute;
+    left: 1%;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.wuqi1 .zuo1 .name p:nth-child(2) {
+    color: #ffaf52;
+    display: inline-block;
+    position: absolute;
+    right: 1%;
+    font-size: 20px;
+}
+
+.wuqi1 .zuo1 .gjl {
+    width: 230px;
+    height: 56px;
+    position: absolute;
+    top: 15%;
+    right: 6%;
+    text-align: center;
+    line-height: 28px;
+    background-color: #ffaf52;
+    color: #f6f0e5;
+    font-weight: 600;
+}
+
+.wuqi1 .zuo1 .jn {
+    height: 28px;
+    position: absolute;
+    top: 35%;
+    left: 6%;
+    font-weight: 700;
+    font-size: 16px;
+    color: #3e4556;
+    line-height: 28px;
+}
+
+.wuqi1 .zuo1 .jnjs {
+    width: 400px;
+    position: absolute;
+    top: 41%;
+    left: 6%;
+    font-weight: 530;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.wuqi1 .zuo1 .jstj {
+    height: 28px;
+    position: absolute;
+    top: 68%;
+    left: 6%;
+    font-weight: 700;
+    font-size: 16px;
+    color: #3e4556;
+    line-height: 28px;
+}
+
+.wuqi1 .zuo1 .jsjs {
+    width: 400px;
+    position: absolute;
+    top: 74%;
+    left: 6%;
+    font-weight: 530;
+    font-size: 15px;
+    line-height: 20px;
 }
