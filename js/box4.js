@@ -228,8 +228,14 @@ let gong = `<div class="card" style="--i:-4"><img src="图片/box4/武器/弓/�
 const ul3 = document.querySelectorAll('.ul3 li')
 const wuqi = document.querySelector('.wuqi .container')
 let x = document.querySelector('.box4 .wuqi1 .x')
+let bwuq = document.querySelector('.box4 .wuqi')
+let bwuq1 = document.querySelector('.box4 .wuqi1')
+let wqclick = document.querySelectorAll('.wuqi .container .card')
 for (let i = 0; i < ul3.length; i++) {
     ul3[i].addEventListener('click', function () {
+        if (bwuq1.style.display === 'block') {
+            return alert('请先关闭上一个武器介绍')
+        }
         // 头部导航栏点击
         for (let j = 0; j < ul3.length; j++) {
             ul3[j].style.color = '#9499A4'
@@ -239,7 +245,6 @@ for (let i = 0; i < ul3.length; i++) {
         ul3[i].style.color = '#37475E'
         ul3[i].style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.25) inset'
         ul3[i].style.background = '#FFF'
-
         // 武器卡片切换
         if (i === 0) {
             wuqi.innerHTML = danshoujian
@@ -267,11 +272,11 @@ for (let i = 0; i < ul3.length; i++) {
 showwuqi(0)
 // 武器介绍
 function showwuqi(n) {
-    let bwuq = document.querySelector('.box4 .wuqi')
-    let bwuq1 = document.querySelector('.box4 .wuqi1')
-    let wqclick = document.querySelectorAll('.wuqi .container .card')
+    wqclick = document.querySelectorAll('.wuqi .container .card')
     for (let i = 0; i < wqclick.length; i++) {
         wqclick[i].addEventListener('click', function () {
+            bwuq = document.querySelector('.box4 .wuqi')
+            bwuq1 = document.querySelector('.box4 .wuqi1')
             // 武器卡片点击
             bwuq.style.opacity = '0'
             bwuq1.style.display = 'block'
